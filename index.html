@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来主义个人网页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>欢迎来到未来</h1>
+            <p>探索科技与创新的边界</p>
+            <button id="explore-btn" class="glow-button">开始探索</button>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="profile-photo">
+                    <img src="images/4428b0dd493173b16c0b2c6433f61ff3.jpg" alt="个人照片" loading="lazy">
+                </div>
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>个人简介</h3>
+                        <p>未来科技探索者，创新思维引领者</p>
+                    </div>
+                    <div class="card">
+                        <h3>专业领域</h3>
+                        <p>人工智能 | 区块链 | 量子计算</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>技能展示</h2>
+            <div class="skill-bars">
+                <div class="skill">
+                    <span>人工智能</span>
+                    <div class="bar"><div class="fill" data-width="90%"></div></div>
+                </div>
+                <div class="skill">
+                    <span>区块链</span>
+                    <div class="bar"><div class="fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill">
+                    <span>量子计算</span>
+                    <div class="bar"><div class="fill" data-width="75%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>项目展示</h2>
+            <div class="project-carousel">
+                <div class="project-item">
+                    <h3>项目 1</h3>
+                    <p>这是项目 1 的描述。</p>
+                </div>
+                <div class="project-item">
+                    <h3>项目 2</h3>
+                    <p>这是项目 2 的描述。</p>
+                </div>
+                <div class="project-item">
+                    <h3>项目 3</h3>
+                    <p>这是项目 3 的描述。</p>
+                </div>
+            </div>
+            <button id="prev-project" class="carousel-btn">上一个</button>
+            <button id="next-project" class="carousel-btn">下一个</button>
+        </section>
+
+        <section id="contact">
+            <h2>联系我</h2>
+            <div class="hologram-chat">
+                <div class="messages"></div>
+                <input type="text" id="user-input" placeholder="输入您的消息...">
+                <button id="send-btn">发送</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="icon" id="weibo"><i class="fab fa-weibo"></i></a>
+            <a href="#" class="icon" id="github"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" id="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="icon" id="qq">
+                <i class="fab fa-qq"></i>
+                <span class="qq-number">3578779551</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
